@@ -1,0 +1,87 @@
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="1"
+        android:background="#ffcdd3e0">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.03">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/caller"
+                android:id="@+id/caller"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="98dp"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/callTime"
+                android:id="@+id/callTime"
+                android:layout_weight="0.14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:weightSum="1"
+            android:layout_gravity="bottom|top"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:id="@+id/dialog"
+                android:layout_weight="1"
+                android:background="@android:drawable/editbox_background_normal"
+                android:textSize="20sp"
+                android:textAlignment="gravity"
+                android:autoText="false"
+                android:clickable="true"
+                android:textIsSelectable="true"
+                android:enabled="true"
+                android:layout_gravity="bottom|top" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_weight="0"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/startService"
+                android:onClick="onClickStart"
+                android:id="@+id/startServiceBtn"
+                android:layout_weight="0.3" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/endCall"
+                android:id="@+id/endCallBtn"
+                android:layout_weight="0.3"
+                android:layout_marginRight="11dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

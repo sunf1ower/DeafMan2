@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DeafMan2</string>
+    <string name="action_settings">Настройки</string>
+    <string name="caller">#Caller</string>
+    <string name="callTime">#CallTime</string>
+    <string name="endCall">Завершить вызов</string>
+    <string name="startService">Старт/Стоп сервис</string>
+
+</resources>
